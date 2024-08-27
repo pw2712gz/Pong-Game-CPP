@@ -1,5 +1,6 @@
-CMakeFiles/PongGame.dir/src/main.cpp.o: \
-  /Users/ayubyusuf/Desktop/PongGame/src/main.cpp \
+CMakeFiles/PongGame.dir/src/Ball.cpp.o: \
+  /Users/ayubyusuf/Desktop/PongGame/src/Ball.cpp \
+  /Users/ayubyusuf/Desktop/PongGame/include/Ball.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Graphics.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Window.hpp \
   /opt/homebrew/opt/sfml/include/SFML/System.hpp \
@@ -951,6 +952,4 @@ CMakeFiles/PongGame.dir/src/main.cpp.o: \
   /opt/homebrew/opt/sfml/include/SFML/Graphics/Glsl.inl \
   /opt/homebrew/opt/sfml/include/SFML/Graphics/Sprite.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Graphics/Text.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/Paddle.hpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/Ball.hpp
+  /opt/homebrew/opt/sfml/include/SFML/Graphics/VertexBuffer.hpp

@@ -7,14 +7,17 @@ project(PongGame)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Set the SFML directory paths (Homebrew installs SFML here on Apple Silicon)
+# Include the header files directory
+include_directories(include)
+
+# Set the SFML directory paths
 set(SFML_DIR "/opt/homebrew/opt/sfml/lib/cmake/SFML")
 
 # Find the SFML package
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
 # Add the executable
-add_executable(PongGame src/main.cpp)
+add_executable(PongGame src/main.cpp src/Paddle.cpp src/Ball.cpp)
 
 # Link the SFML libraries
 target_link_libraries(PongGame sfml-graphics sfml-window sfml-system)

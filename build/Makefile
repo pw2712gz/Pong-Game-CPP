@@ -129,6 +129,54 @@ PongGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/build
 .PHONY : PongGame/fast
 
+src/Ball.o: src/Ball.cpp.o
+.PHONY : src/Ball.o
+
+# target to build an object file
+src/Ball.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Ball.cpp.o
+.PHONY : src/Ball.cpp.o
+
+src/Ball.i: src/Ball.cpp.i
+.PHONY : src/Ball.i
+
+# target to preprocess a source file
+src/Ball.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Ball.cpp.i
+.PHONY : src/Ball.cpp.i
+
+src/Ball.s: src/Ball.cpp.s
+.PHONY : src/Ball.s
+
+# target to generate assembly for a file
+src/Ball.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Ball.cpp.s
+.PHONY : src/Ball.cpp.s
+
+src/Paddle.o: src/Paddle.cpp.o
+.PHONY : src/Paddle.o
+
+# target to build an object file
+src/Paddle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Paddle.cpp.o
+.PHONY : src/Paddle.cpp.o
+
+src/Paddle.i: src/Paddle.cpp.i
+.PHONY : src/Paddle.i
+
+# target to preprocess a source file
+src/Paddle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Paddle.cpp.i
+.PHONY : src/Paddle.cpp.i
+
+src/Paddle.s: src/Paddle.cpp.s
+.PHONY : src/Paddle.s
+
+# target to generate assembly for a file
+src/Paddle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Paddle.cpp.s
+.PHONY : src/Paddle.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PongGame"
+	@echo "... src/Ball.o"
+	@echo "... src/Ball.i"
+	@echo "... src/Ball.s"
+	@echo "... src/Paddle.o"
+	@echo "... src/Paddle.i"
+	@echo "... src/Paddle.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
