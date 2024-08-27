@@ -25,7 +25,7 @@ int main() {
     player1ScoreText.setCharacterSize(24);
     player1ScoreText.setFillColor(sf::Color::Red);
     player1ScoreText.setString("Player 1: 0");
-    player1ScoreText.setPosition(window.getSize().x / 2.0f - 200.0f, window.getSize().y - 50.0f);  // Adjust to sit closer to the middle
+    player1ScoreText.setPosition(window.getSize().x / 2.0f - 200.0f, window.getSize().y - 50.0f);
 
     // Create the player 2 score text
     sf::Text player2ScoreText;
@@ -33,7 +33,7 @@ int main() {
     player2ScoreText.setCharacterSize(24);
     player2ScoreText.setFillColor(sf::Color::Blue);
     player2ScoreText.setString("Player 2: 0");
-    player2ScoreText.setPosition(window.getSize().x / 2.0f + 50.0f, window.getSize().y - 50.0f);  // Adjust to sit closer to the middle
+    player2ScoreText.setPosition(window.getSize().x / 2.0f + 50.0f, window.getSize().y - 50.0f);
 
     // Create the dashed middle line
     std::vector<sf::RectangleShape> dashedLine;
@@ -64,6 +64,9 @@ int main() {
     rightBorder.setFillColor(sf::Color::White);
 
     sf::Clock clock;
+    sf::Clock resetClock;  // Clock to manage the reset delay
+
+    bool ballInPlay = true;
 
     while (window.isOpen()) {
         sf::Event event;
@@ -74,32 +77,39 @@ int main() {
 
         float deltaTime = clock.restart().asSeconds();
 
-        // Paddle movement
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-            player1.moveUp(deltaTime);
-        } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-            player1.moveDown(deltaTime);
-        }
-        player1.update(deltaTime);
+        if (ballInPlay) {
+            // Paddle movement
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+                player1.moveUp(deltaTime);
+            } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+                player1.moveDown(deltaTime);
+            }
+            player1.update(deltaTime);
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-            player2.moveUp(deltaTime);
-        } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-            player2.moveDown(deltaTime);
-        }
-        player2.update(deltaTime);
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+                player2.moveUp(deltaTime);
+            } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+                player2.moveDown(deltaTime);
+            }
+            player2.update(deltaTime);
 
-        // Update ball
-        ball.update();
-        ball.checkCollision(player1.getShape(), player2.getShape());
+            // Update ball
+            ball.update();
+            ball.checkCollision(player1.getShape(), player2.getShape());
 
-        // Check if ball goes out of bounds and update scores
-        if (ball.getPosition().x < 0) {
-            score2++;  // Player 2 scores
-            ball.reset();  // Reset the ball to the center
-        } else if (ball.getPosition().x > 800) {
-            score1++;  // Player 1 scores
-            ball.reset();  // Reset the ball to the center
+            // Check if ball goes out of bounds and update scores
+            if (ball.getPosition().x < 0) {
+                score2++;  // Player 2 scores
+                ballInPlay = false;
+                resetClock.restart();  // Start the reset delay
+            } else if (ball.getPosition().x > 800) {
+                score1++;  // Player 1 scores
+                ballInPlay = false;
+                resetClock.restart();  // Start the reset delay
+            }
+        } else if (resetClock.getElapsedTime().asSeconds() > 1.0f) {  // 1-second delay before the ball is put back in play
+            ball.reset();
+            ballInPlay = true;
         }
 
         // Update the score displays

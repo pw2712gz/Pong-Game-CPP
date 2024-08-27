@@ -22,8 +22,11 @@ private:
     sf::Vector2f velocity;
     const float ballRadius = 10.0f;
     const float initialSpeed = 0.05f;
+    const float maxSpeed = 0.3f;  // Cap for the ball's speed
     const float windowWidth = 800.0f;
     const float windowHeight = 600.0f;
+
+    void clampSpeed();  // Helper method to cap the speed
 };
 
 #endif

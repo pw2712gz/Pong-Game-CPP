@@ -1833,6 +1833,7 @@ CMakeFiles/PongGame.dir/src/Paddle.cpp.o: /Users/ayubyusuf/Desktop/PongGame/src/
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h \
+  /Users/ayubyusuf/Desktop/PongGame/include/Paddle.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Config.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Graphics.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Graphics/BlendMode.hpp \
