@@ -953,4 +953,6 @@ CMakeFiles/PongGame.dir/src/main.cpp.o: \
   /opt/homebrew/opt/sfml/include/SFML/Graphics/Text.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Graphics/VertexBuffer.hpp \
   /Users/ayubyusuf/Desktop/PongGame/include/Paddle.hpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/Ball.hpp
+  /Users/ayubyusuf/Desktop/PongGame/include/Ball.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream

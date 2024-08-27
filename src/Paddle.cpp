@@ -28,13 +28,13 @@ void Paddle::moveDown(float deltaTime) {
 }
 
 void Paddle::update() {
-    // Additional logic can be added here if necessary
+    // Any additional logic can go here
 }
 
 void Paddle::render(sf::RenderWindow& window) {
     window.draw(paddleShape);
 }
 
-sf::RectangleShape Paddle::getShape() {
+sf::RectangleShape Paddle::getShape() const {
     return paddleShape;
 }

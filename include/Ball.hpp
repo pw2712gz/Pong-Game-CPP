@@ -12,6 +12,9 @@ public:
     void checkCollision(const sf::RectangleShape& paddle1, const sf::RectangleShape& paddle2);
     void reset();
 
+    // Method to get the ball's position
+    sf::Vector2f getPosition() const;
+
 private:
     sf::CircleShape ballShape;
     sf::Vector2f velocity;
