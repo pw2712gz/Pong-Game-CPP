@@ -80,16 +80,16 @@ int main() {
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
             player1.moveDown(deltaTime);
         }
+        player1.update(deltaTime);
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
             player2.moveUp(deltaTime);
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
             player2.moveDown(deltaTime);
         }
+        player2.update(deltaTime);
 
-        // Update paddles and ball
-        player1.update();
-        player2.update();
+        // Update ball
         ball.update();
         ball.checkCollision(player1.getShape(), player2.getShape());
 

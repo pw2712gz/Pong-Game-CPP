@@ -2,6 +2,8 @@
 #define BALL_HPP
 
 #include <SFML/Graphics.hpp>
+#include <cmath>  // For std::cos and std::sin
+#include <cstdlib>  // For std::rand
 
 class Ball {
 public:
@@ -19,7 +21,7 @@ private:
     sf::CircleShape ballShape;
     sf::Vector2f velocity;
     const float ballRadius = 10.0f;
-    const float initialSpeed = 4.0f;
+    const float initialSpeed = 0.05f;
     const float windowWidth = 800.0f;
     const float windowHeight = 600.0f;
 };

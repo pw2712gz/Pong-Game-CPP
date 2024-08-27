@@ -9,26 +9,22 @@ Paddle::Paddle(float startX, float startY) {
 
 void Paddle::moveUp(float deltaTime) {
     yVelocity = -paddleSpeed;
-    sf::Vector2f pos = paddleShape.getPosition();
-    pos.y += yVelocity * deltaTime;
-
-    if (pos.y < 0) pos.y = 0;
-
-    paddleShape.setPosition(pos);
 }
 
 void Paddle::moveDown(float deltaTime) {
     yVelocity = paddleSpeed;
+}
+
+void Paddle::update(float deltaTime) {
     sf::Vector2f pos = paddleShape.getPosition();
     pos.y += yVelocity * deltaTime;
 
+    if (pos.y < 0) pos.y = 0;
     if (pos.y + paddleHeight > windowHeight) pos.y = windowHeight - paddleHeight;
 
     paddleShape.setPosition(pos);
-}
 
-void Paddle::update() {
-    // Any additional logic can go here
+    yVelocity = 0.0f;  // Reset velocity after applying movement
 }
 
 void Paddle::render(sf::RenderWindow& window) {

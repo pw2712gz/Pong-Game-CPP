@@ -9,7 +9,7 @@ public:
 
     void moveUp(float deltaTime);
     void moveDown(float deltaTime);
-    void update();
+    void update(float deltaTime);
     void render(sf::RenderWindow& window);
 
     sf::RectangleShape getShape() const;
@@ -17,7 +17,7 @@ public:
 private:
     sf::RectangleShape paddleShape;
     float yVelocity;
-    const float paddleSpeed = 300.0f;  // Speed in pixels per second
+    const float paddleSpeed = 450.0f;  // Speed in pixels per second
     const float paddleHeight = 100.0f;
     const float paddleWidth = 20.0f;
     const float windowHeight = 600.0f;
