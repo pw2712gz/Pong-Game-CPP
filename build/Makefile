@@ -153,6 +153,30 @@ src/Ball.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Ball.cpp.s
 .PHONY : src/Ball.cpp.s
 
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
+
+# target to build an object file
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
+
 src/Paddle.o: src/Paddle.cpp.o
 .PHONY : src/Paddle.o
 
@@ -176,6 +200,30 @@ src/Paddle.s: src/Paddle.cpp.s
 src/Paddle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Paddle.cpp.s
 .PHONY : src/Paddle.cpp.s
+
+src/SoundManager.o: src/SoundManager.cpp.o
+.PHONY : src/SoundManager.o
+
+# target to build an object file
+src/SoundManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/SoundManager.cpp.o
+.PHONY : src/SoundManager.cpp.o
+
+src/SoundManager.i: src/SoundManager.cpp.i
+.PHONY : src/SoundManager.i
+
+# target to preprocess a source file
+src/SoundManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/SoundManager.cpp.i
+.PHONY : src/SoundManager.cpp.i
+
+src/SoundManager.s: src/SoundManager.cpp.s
+.PHONY : src/SoundManager.s
+
+# target to generate assembly for a file
+src/SoundManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/SoundManager.cpp.s
+.PHONY : src/SoundManager.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -213,9 +261,15 @@ help:
 	@echo "... src/Ball.o"
 	@echo "... src/Ball.i"
 	@echo "... src/Ball.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
 	@echo "... src/Paddle.o"
 	@echo "... src/Paddle.i"
 	@echo "... src/Paddle.s"
+	@echo "... src/SoundManager.o"
+	@echo "... src/SoundManager.i"
+	@echo "... src/SoundManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

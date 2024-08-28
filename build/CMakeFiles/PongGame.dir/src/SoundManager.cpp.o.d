@@ -1,8 +1,7 @@
-CMakeFiles/PongGame.dir/src/main.cpp.o: \
-  /Users/ayubyusuf/Desktop/PongGame/src/main.cpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/Game.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window.hpp \
+CMakeFiles/PongGame.dir/src/SoundManager.cpp.o: \
+  /Users/ayubyusuf/Desktop/PongGame/src/SoundManager.cpp \
+  /Users/ayubyusuf/Desktop/PongGame/include/SoundManager.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio.hpp \
   /opt/homebrew/opt/sfml/include/SFML/System.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Config.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/TargetConditionals.h \
@@ -851,19 +850,13 @@ CMakeFiles/PongGame.dir/src/main.cpp.o: \
   /opt/homebrew/opt/sfml/include/SFML/System/Vector2.inl \
   /opt/homebrew/opt/sfml/include/SFML/System/Vector3.hpp \
   /opt/homebrew/opt/sfml/include/SFML/System/Vector3.inl \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Clipboard.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Export.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Context.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/GlResource.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/ContextSettings.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Cursor.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Event.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Joystick.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Keyboard.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Mouse.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Sensor.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Touch.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/VideoMode.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/InputSoundFile.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/Export.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/Listener.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/Music.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/SoundStream.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/SoundSource.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/AlResource.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_fwd.h \
@@ -890,31 +883,10 @@ CMakeFiles/PongGame.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__split_buffer \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Window.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/WindowBase.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/Vulkan.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/WindowHandle.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Window/WindowStyle.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/BlendMode.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Export.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/CircleShape.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Shape.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Drawable.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/RenderStates.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Transform.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Rect.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Rect.inl \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Transformable.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/VertexArray.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Vertex.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Color.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/PrimitiveType.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/ConvexShape.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Font.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Glyph.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Texture.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Image.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/OutputSoundFile.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/Sound.hpp \
+  /opt/homebrew/opt/sfml/include/SFML/Audio/SoundBuffer.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/set \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__node_handle \
@@ -942,36 +914,12 @@ CMakeFiles/PongGame.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/RectangleShape.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/RenderTarget.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/View.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/RenderTexture.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/RenderWindow.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Shader.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Glsl.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Glsl.inl \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Sprite.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/Text.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Graphics/VertexBuffer.hpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/Paddle.hpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/Ball.hpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/SoundManager.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/InputSoundFile.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/Export.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/Listener.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/Music.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/SoundStream.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/SoundSource.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/AlResource.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/OutputSoundFile.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/Sound.hpp \
-  /opt/homebrew/opt/sfml/include/SFML/Audio/SoundBuffer.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/set \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundBufferRecorder.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundRecorder.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundFileFactory.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundFileFactory.inl \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundFileReader.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundFileWriter.hpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/Constants.hpp
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream

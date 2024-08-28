@@ -24,12 +24,12 @@ void Ball::update() {
     ballShape.setPosition(pos);
 }
 
-void Ball::render(sf::RenderWindow& window) {
+void Ball::render(sf::RenderWindow& window) {  // Ensure this is correctly implemented
     window.draw(ballShape);
 }
 
 void Ball::checkCollision(const sf::RectangleShape& paddle1, const sf::RectangleShape& paddle2) {
-    const float speedIncrement = 0.05f;
+    const float speedIncrement = 0.03f;
     if (ballShape.getGlobalBounds().intersects(paddle1.getGlobalBounds())) {
         velocity.x = -velocity.x * (1.0f + speedIncrement);  // Increase speed
         clampSpeed();  // Cap the speed
@@ -58,6 +58,10 @@ void Ball::reset() {
 
 sf::Vector2f Ball::getPosition() const {
     return ballShape.getPosition();
+}
+
+float Ball::getRadius() const {
+    return ballRadius;
 }
 
 void Ball::clampSpeed() {

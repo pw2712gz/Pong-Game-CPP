@@ -1,5 +1,5 @@
-CMakeFiles/PongGame.dir/src/main.cpp.o: \
-  /Users/ayubyusuf/Desktop/PongGame/src/main.cpp \
+CMakeFiles/PongGame.dir/src/Game.cpp.o: \
+  /Users/ayubyusuf/Desktop/PongGame/src/Game.cpp \
   /Users/ayubyusuf/Desktop/PongGame/include/Game.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Graphics.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Window.hpp \
@@ -974,4 +974,6 @@ CMakeFiles/PongGame.dir/src/main.cpp.o: \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundFileFactory.inl \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundFileReader.hpp \
   /opt/homebrew/opt/sfml/include/SFML/Audio/SoundFileWriter.hpp \
-  /Users/ayubyusuf/Desktop/PongGame/include/Constants.hpp
+  /Users/ayubyusuf/Desktop/PongGame/include/Constants.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream

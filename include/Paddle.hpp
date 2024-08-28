@@ -19,7 +19,7 @@ private:
     float yVelocity;
     const float paddleSpeed = 450.0f;
     const float paddleHeight = 100.0f;
-    const float paddleWidth = 20.0f;
+    const float paddleWidth = 10.0f;
     const float windowHeight = 600.0f;
 };
 

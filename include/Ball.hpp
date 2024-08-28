@@ -17,11 +17,14 @@ public:
     // Method to get the ball's position
     sf::Vector2f getPosition() const;
 
+    // Method to get the ball's radius
+    float getRadius() const;
+
 private:
     sf::CircleShape ballShape;
     sf::Vector2f velocity;
     const float ballRadius = 10.0f;
-    const float initialSpeed = 0.05f;
+    const float initialSpeed = 0.060f;
     const float maxSpeed = 0.3f;  // Cap for the ball's speed
     const float windowWidth = 800.0f;
     const float windowHeight = 600.0f;

@@ -14,10 +14,10 @@ include_directories(include)
 set(SFML_DIR "/opt/homebrew/opt/sfml/lib/cmake/SFML")
 
 # Find the SFML package
-find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+find_package(SFML 2.5 COMPONENTS graphics window system audio REQUIRED)
 
-# Add the executable
-add_executable(PongGame src/main.cpp src/Paddle.cpp src/Ball.cpp)
+# Add the executable with all source files
+add_executable(PongGame src/main.cpp src/Paddle.cpp src/Ball.cpp src/Game.cpp src/SoundManager.cpp)
 
 # Link the SFML libraries
-target_link_libraries(PongGame sfml-graphics sfml-window sfml-system)
+target_link_libraries(PongGame sfml-graphics sfml-window sfml-system sfml-audio)

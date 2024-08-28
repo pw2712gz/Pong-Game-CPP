@@ -111,11 +111,41 @@ CMakeFiles/PongGame.dir/src/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PongGame.dir/src/Ball.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ayubyusuf/Desktop/PongGame/src/Ball.cpp -o CMakeFiles/PongGame.dir/src/Ball.cpp.s
 
+CMakeFiles/PongGame.dir/src/Game.cpp.o: CMakeFiles/PongGame.dir/flags.make
+CMakeFiles/PongGame.dir/src/Game.cpp.o: /Users/ayubyusuf/Desktop/PongGame/src/Game.cpp
+CMakeFiles/PongGame.dir/src/Game.cpp.o: CMakeFiles/PongGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ayubyusuf/Desktop/PongGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PongGame.dir/src/Game.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PongGame.dir/src/Game.cpp.o -MF CMakeFiles/PongGame.dir/src/Game.cpp.o.d -o CMakeFiles/PongGame.dir/src/Game.cpp.o -c /Users/ayubyusuf/Desktop/PongGame/src/Game.cpp
+
+CMakeFiles/PongGame.dir/src/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PongGame.dir/src/Game.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ayubyusuf/Desktop/PongGame/src/Game.cpp > CMakeFiles/PongGame.dir/src/Game.cpp.i
+
+CMakeFiles/PongGame.dir/src/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PongGame.dir/src/Game.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ayubyusuf/Desktop/PongGame/src/Game.cpp -o CMakeFiles/PongGame.dir/src/Game.cpp.s
+
+CMakeFiles/PongGame.dir/src/SoundManager.cpp.o: CMakeFiles/PongGame.dir/flags.make
+CMakeFiles/PongGame.dir/src/SoundManager.cpp.o: /Users/ayubyusuf/Desktop/PongGame/src/SoundManager.cpp
+CMakeFiles/PongGame.dir/src/SoundManager.cpp.o: CMakeFiles/PongGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ayubyusuf/Desktop/PongGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PongGame.dir/src/SoundManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PongGame.dir/src/SoundManager.cpp.o -MF CMakeFiles/PongGame.dir/src/SoundManager.cpp.o.d -o CMakeFiles/PongGame.dir/src/SoundManager.cpp.o -c /Users/ayubyusuf/Desktop/PongGame/src/SoundManager.cpp
+
+CMakeFiles/PongGame.dir/src/SoundManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PongGame.dir/src/SoundManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ayubyusuf/Desktop/PongGame/src/SoundManager.cpp > CMakeFiles/PongGame.dir/src/SoundManager.cpp.i
+
+CMakeFiles/PongGame.dir/src/SoundManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PongGame.dir/src/SoundManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ayubyusuf/Desktop/PongGame/src/SoundManager.cpp -o CMakeFiles/PongGame.dir/src/SoundManager.cpp.s
+
 # Object files for target PongGame
 PongGame_OBJECTS = \
 "CMakeFiles/PongGame.dir/src/main.cpp.o" \
 "CMakeFiles/PongGame.dir/src/Paddle.cpp.o" \
-"CMakeFiles/PongGame.dir/src/Ball.cpp.o"
+"CMakeFiles/PongGame.dir/src/Ball.cpp.o" \
+"CMakeFiles/PongGame.dir/src/Game.cpp.o" \
+"CMakeFiles/PongGame.dir/src/SoundManager.cpp.o"
 
 # External object files for target PongGame
 PongGame_EXTERNAL_OBJECTS =
@@ -123,12 +153,15 @@ PongGame_EXTERNAL_OBJECTS =
 PongGame: CMakeFiles/PongGame.dir/src/main.cpp.o
 PongGame: CMakeFiles/PongGame.dir/src/Paddle.cpp.o
 PongGame: CMakeFiles/PongGame.dir/src/Ball.cpp.o
+PongGame: CMakeFiles/PongGame.dir/src/Game.cpp.o
+PongGame: CMakeFiles/PongGame.dir/src/SoundManager.cpp.o
 PongGame: CMakeFiles/PongGame.dir/build.make
 PongGame: /opt/homebrew/opt/sfml/lib/libsfml-graphics.2.6.1.dylib
 PongGame: /opt/homebrew/opt/sfml/lib/libsfml-window.2.6.1.dylib
+PongGame: /opt/homebrew/opt/sfml/lib/libsfml-audio.2.6.1.dylib
 PongGame: /opt/homebrew/opt/sfml/lib/libsfml-system.2.6.1.dylib
 PongGame: CMakeFiles/PongGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ayubyusuf/Desktop/PongGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PongGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ayubyusuf/Desktop/PongGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable PongGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PongGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
